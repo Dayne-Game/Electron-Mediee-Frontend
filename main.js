@@ -2,13 +2,16 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
 
+require('electron-reload')(__dirname);
+
 app.disableHardwareAcceleration();
+
 
 function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1150,
-    height: 680,
+    width: 1200,
+    height: 730,
     resizable: false,
     fullscreen: false
   });
