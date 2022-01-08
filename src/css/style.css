@@ -21,6 +21,35 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: var(--mediee-red);
+}
+
+a:hover {
+  color: var(--black);
+}
+
+input:focus {
+  outline: 1px solid var(--mediee-red);
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -163,22 +192,25 @@ tr:last-child td:last-child {
 }
 
 .form-button {
-  width: 100%;
-  padding: 10px;
-  background: var(--black);
+  width: 50%;
+  padding: 13px;
+  background: var(--mediee-red);
   border-radius: 4px;
 
   color: var(--white);
   font-size: 14px;
-  border: 1px solid var(--black);
+  border: 1px solid var(--mediee-red);
 
   margin-top: 10px;
   cursor: pointer;
+
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .form-button:hover {
-  background: var(--mediee-red);
-  border: 1px solid var(--mediee-red);
+  background: var(--black);
+  border: 1px solid var(--black);
   color: var(--white);
 }
 
